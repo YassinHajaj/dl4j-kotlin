@@ -33,7 +33,7 @@ fun main(args: Array<String>) {
         .updater(Adam())
         .list()
         .layer(
-            DenseLayer.Builder() //create the first, input layer with xavier initialization
+            DenseLayer.Builder() //create the first input layer
                 .nIn(numRows * numColumns)
                 .nOut(1000)
                 .activation(Activation.RELU)
